@@ -25,19 +25,19 @@ docpadConfig = {
 
 			# The website description (for SEO)
 			description: """
-				When your website appears in search results in say Google, the text here will be shown underneath your website's title.
+				Mobiletalk Wireless empowers your team with instant, push-to-talk communications in the greater Spokane area.
 				"""
 
 			# The website keywords (for SEO) separated by commas
 			keywords: """
-				place, your, website, keywoards, here, keep, them, related, to, the, content, of, your, website
+				radio, two way radio, push to talk, wireless, fleet communication
 				"""
 
 			# The website author's name
-			author: "Your Name"
+			author: "Mobiletalk Wireless"
 
 			# The website author's email
-			email: "your@email.com"
+			email: "info@mobiletalkwireless.com"
 
 			# Styles
 			styles: [
@@ -47,7 +47,7 @@ docpadConfig = {
 
 			# Scripts
 			scripts: [
-				"//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+				"//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"
 				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
 				"/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
 				"/scripts/script.js"
