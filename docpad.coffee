@@ -42,14 +42,19 @@ docpadConfig = {
 			# Styles
 			styles: [
 				"/styles/twitter-bootstrap.css"
+                "//code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css"
 				"/styles/style.css"
+                "//fonts.googleapis.com/css?family=News+Cycle"
 			]
 
 			# Scripts
 			scripts: [
-				"//cdnjs.cloudflare.com/ajax/libs/zepto/1.1.4/zepto.min.js"
-				"//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
+				"/vendor/zepto/zepto.min.js"
+				"/vendor/modernizr/modernizr.min.js"
+                "/vendor/flesler/jquery.scrollTo.min.js"
+                "/vendor/flesler/jquery.localScroll.min.js"
 				"/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"
+                "/vendor/fitvids/jquery.fitvids.js"
 				"/scripts/script.js"
 			]
 
