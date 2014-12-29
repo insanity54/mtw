@@ -83,6 +83,12 @@
 	</div><!-- /container -->
 
 	<!-- Scripts -->
-	<%- @getBlock('scripts').add([@site.scripts, "/scripts/sitemap.js"]).toHTML() %>
+    <script>
+        $(document).ready(function() {
+            console.log('fit-video.js loaded.');
+            $("#video").fitVids();
+        });
+    </script>
+    <%- @getBlock('scripts').add(@site.scripts or []).add("/scripts/sitemap.js" or []).toHTML() %>
 </body>
 </html>
