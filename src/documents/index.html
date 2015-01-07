@@ -5,13 +5,65 @@ title: 'MobileTalk Wireless'
 
 <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css">
 
+<!-- Mobiletalk Logo -->
+<div class="row">
+    <div class="col-md-12">
+        <div id="logo">
+            <img src="/images/mobiletalkwireless-logo.png" />
+        </div>
+    </div>
+</div>
+
 <!-- Mobiletalk in a nutshell -->
 <div class="row">
     <div class="col-md-6 col-sm-6">
         <div class="jist-section">
             <h1 class="jist">
-                Instant, push-to-talk communications for your fleet in the greater Spokane area.
+                Instant, push-to-talk communications for your team in the Inland Northwest.
             </h1>
+            <h5>Get in touch with our experts</h5>
+            
+            <!-- contact form -->
+            <form class="subscription-form form-inline" id="callbox">
+
+                <h4 class="subscription-success"><i class="icon_check"></i>Thank you! .</h4>
+                <h4 class="subscription-error">Something's Wrong!</h4>
+                
+                <!-- name -->
+                <input type="name" name="name" id="subscriber-name" placeholder="Your Name" class="form-control input-box">
+
+                <!-- contact selector (email/phone/txt) -->
+                <div class="row">
+                    <div class="col-12 contact-selector-wrapper">
+                        <a href="#" id="contact-method-email" role="button">E-Mail me</a> | <a href="#" id="contact-method-phone" role="button">Call me</a> | <a href="#" id="contact-method-txt" role="button">Txt me</a>
+                    </div>
+                </div>
+                
+                <!-- selected contact method input -->
+                <!-- email -->
+                <div class="control-group contact-email-wrapper">
+                    <input type="email" name="email" id="subscriber-email" placeholder="Your E-Mail" class="form-control input-box">
+                </div>
+                
+                <!-- phone -->
+                <div class="control-group contact-phone-wrapper">
+                    <input type="phone" name="phone" id="subscriber-phone" placeholder="Your Phone Number" class="form-control input-box">
+                </div>
+                
+                <!-- txt -->
+                <div class="control-group contact-txt-wrapper">
+                    <input type="phone" name="phone" id="subscriber-txt"
+                           placeholder="Your Phone Number" class="form-control input-box">
+                </div>
+
+
+                <!-- submit button -->
+                <div class="control-group contact-button-wrapper">
+                    <button type="submit" id="subscribe-button" class="btn btn-default standard-button">Contact me!</button>
+                </div>
+                
+
+            </form>
         </div>
     </div>
     <div class="col-md-6 col-sm-6">
@@ -21,31 +73,40 @@ title: 'MobileTalk Wireless'
     </div>
 </div>
 
-<!-- Example row of columns -->
+
+<!-- Mobiletalk features -->
 <div class="row" class="text-center">
-	<div class="col-lg-4">
-        <div class="service-icon">
-            <i class="icon ion-social-usd"></i>
+    <div class="services">
+        
+        <!-- low cost -->
+        <div class="col-lg-4">
+            <div class="service-icon">
+                <i class="icon ion-social-usd"></i>
+            </div>
+            <h2>Low cost</h2>
+            <p>Compared to cell phones, Mobiletalk saves you money because reasons 1, 2, 3.</p>
+            <p><a class="btn btn-default" href="/pages/pricing">Learn more</a></p>
         </div>
-        <h2>Low cost</h2>
-        <p>Compared to cell phones, Mobiletalk saves you money because reasons 1, 2, 3.</p>
-		<p><a class="btn btn-default" href="/pages/pricing">Learn more</a></p>
-	</div>
-	<div class="col-lg-4">
-        <div class="service-icon">
-            <i class="icon ion-flash"></i>
+        
+        <!-- efficient -->
+        <div class="col-lg-4">
+            <div class="service-icon">
+                <i class="icon ion-flash"></i>
+            </div>
+            <h2>Efficient</h2>
+            <p>It doesn't send pictures of your dog. It just communicates.</p>
+            <p><a class="btn btn-default" href="/pages/basics">Learn more</a></p>
         </div>
-        <h2>Efficient</h2>
-		<p>It doesn't send pictures of your dog. It just communicates.</p>
-		<p><a class="btn btn-default" href="/pages/basics">Learn more</a></p>
-	</div>
-    <div class="col-lg-4">
-        <div class="service-icon">
-            <i class="icon ion-connection-bars"></i>
+        
+        <!-- coverage -->
+        <div class="col-lg-4">
+            <div class="service-icon">
+                <i class="icon ion-connection-bars"></i>
+            </div>
+            <h2>Coverage</h2>
+            <p>With Mobiletalk Wireless, you inherit the power of Kenwood NEXEDGE. Your fleet is free to roam and be covered by up to six tower sites, without the traditional two-way-radio hassle of switching channels.</p>
+            <p><a class="btn btn-default" href="/pages/nexedge">Learn more</a></p>
         </div>
-        <h2>Coverage</h2>
-		<p>With Mobiletalk Wireless, you inherit the power of Kenwood NEXEDGE. Your fleet is free to roam and be covered by up to six tower sites, without the traditional two-way-radio hassle of switching channels.</p>
-		<p><a class="btn btn-default" href="/pages/nexedge">Learn more</a></p>
 	</div>
 </div>
 

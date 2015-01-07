@@ -83,6 +83,6 @@
 	</div><!-- /container -->
 
 	<!-- Scripts -->
-    <%- @getBlock('scripts').add(@site.scripts or []).add("/scripts/sitemap.js" or []).add("/scripts/fit-video.js").toHTML() %>
+    <%- @getBlock('scripts').add(@site.scripts or []).add("/scripts/sitemap.js" or []).add("/scripts/fit-video.js").add("/vendor/parsleyjs/dist/parsley.min.js").add("/vendor/fitvids/jquery.fitvids.js").toHTML() %>
 </body>
 </html>
