@@ -67,7 +67,6 @@
 	</div>
 
 	<!-- Content -->
-	<div class="container">
 		<!-- Content -->
 		<section id="content" class="content">
 			<%- @content %>
@@ -80,7 +79,7 @@
 				This website was last updated on <%= @site.date.toLocaleDateString('en-US') %>
 			</p>
 		</footer>
-	</div><!-- /container -->
+	<!-- /container -->
 
 	<!-- Scripts -->
     <%- @getBlock('scripts').add(@site.scripts or []).add("/scripts/sitemap.js" or []).add("/scripts/fit-video.js").add("/vendor/parsleyjs/dist/parsley.min.js").add("/vendor/fitvids/jquery.fitvids.js").toHTML() %>
