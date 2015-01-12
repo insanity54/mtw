@@ -42,7 +42,7 @@ docpadConfig = {
 
             # Styles
             styles: [
-                "/styles/twitter-bootstrap.css"
+                "/vendor/bootstrap/dist/css/bootstrap.css"
                 "//code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css"
                 "/styles/style.css"
                 "//fonts.googleapis.com/css?family=News+Cycle"
@@ -103,16 +103,6 @@ docpadConfig = {
     # =================================
     # Plugins
 
-    plugins:
-        downloader:
-            downloads: [
-                {
-                    name: 'Twitter Bootstrap'
-                    path: 'src/files/vendor/twitter-bootstrap'
-                    url: 'https://codeload.github.com/twbs/bootstrap/tar.gz/master'
-                    tarExtractClean: true
-                }
-            ]
 
 
     # =================================

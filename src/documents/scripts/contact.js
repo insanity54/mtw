@@ -24,6 +24,21 @@ $("a#contact-method-txt").click(function (e) {
 });
 
 
+$("#subscriber-email").ajaxChimp({
+    url: "//mobiletalkwireless.us9.list-manage.com/subscribe/post?u=fd40db3af1236c752af180516&amp;id=ccf1d6de96",
+    //url:             "http://us9.list-manage.com/subscribe/post?u=7c83a35ba1ecaeb8cb45112b7&amp;id=21091b1d82",
+    callback: mailchimpCallback
+});
+
+var mailchimpCallback = function mailchimpCallback(res) {
+    if (res.result === 'success') {
+        console.log('success');
+    } else if (res.result === 'error') {
+        console.log('fail');
+    }
+};
+
+
 //
 //$("#subscribe").submit(function (e) {
 //    e.preventDefault();
