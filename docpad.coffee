@@ -56,7 +56,10 @@ docpadConfig = {
                 "/vendor/jquery.scrollTo/jquery.scrollTo.min.js"
                 "/vendor/bootstrap/dist/js/bootstrap.min.js"
                 "/vendor/fitvids/jquery.fitvids.js"
+                "/vendor/ajaxchimp/jquery.ajaxchimp.js"
+                "/vendor/jQuery-One-Page-Nav/jquery.nav.js"
                 "/scripts/contact.js"
+                "/scripts/stickynav.js"
             ]
 
 

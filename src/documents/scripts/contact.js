@@ -23,8 +23,12 @@ $("a#contact-method-txt").click(function (e) {
     console.log('clicked txt');
 });
 
+$("#subscribe-button").click(function (e) {
+    $('#subscribe-label-wrapper').fadeIn(1000);
+});
 
-$("#subscriber-email").ajaxChimp({
+
+$("#subscribe-form").ajaxChimp({
     url: "//mobiletalkwireless.us9.list-manage.com/subscribe/post?u=fd40db3af1236c752af180516&amp;id=ccf1d6de96",
     //url:             "http://us9.list-manage.com/subscribe/post?u=7c83a35ba1ecaeb8cb45112b7&amp;id=21091b1d82",
     callback: mailchimpCallback
