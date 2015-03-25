@@ -1,89 +1,223 @@
-@import 'nib'
+//
+// JUMBOTRON
+//
+.jumbotron {
+    background-image: url("/images/cityscape.jpg");
+}
 
-a, a:link
-	cursor pointer
+.jumbotron .mobiletalk-logo {
+    float: left;
+    margin-left: 10%;
+}
+
+.jumbotron h2 {
+    margin-top: 62px;
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+    text-align: left;
+}
+
+.jumbotron #front-images {
+    position: relative;
+    float: right;
+    width: 45%;
+    height: 380px;
+}
+
+.jumbotron #front-images img {
+    position: absolute;
+    left: -100px;
+}
+
+
+//
+// FONT COLOR
+//
+.badge-text,
+.section-text,
+.section-header,
+.badge-icon
+{
+    color: #069;
+}
 
 body {
-    padding-top 60px
-    background #232323
-    font-family News Cycle, sans-serif
-    font-size 16px
-    font-weight 300
-    color #c8c8c8
-    line-height 28px
-    text-align center
-    overflow-x hidden !important
-    margin auto !important
+    text-align: center;
+    font-family: "Open Sans",sans-serif
 }
 
-header {
-    background: url('../images/metal2_opt4.jpg') no-repeat center top fixed;
-    -webkit-background-size: cover;
-            background-size: cover;
+#navigation {
+    height: 120px;
+    width: 15px;
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    cursor: pointer;
+    z-index: 4000;
 }
 
-.translucent {
-    background: rgba(0, 0, 0, 0.55);
-    min-height: 800px;
+#contact-button {
+    height: 120px;
+    width: 15px;
+    position: fixed;
+    left: 0;
+    top: 40%;
+    cursor: pointer;
+    z-index: 4000;
 }
 
-h1.jist {
-  margin-bottom 65px
-}
-      
-h2 {
-    font-family News Cycle, sans-serif
+
+#map-canvas {
+    height: 700px;
 }
 
-.colored-line {
+.badge-icon {
+    font-family: none;
+    border: 2px solid dodgerblue;
+    font-size: 5em;
+    width: 1.85em;
+    height: 1.85em;
+    padding-top: 0.4em;
     margin: auto;
-    z-index: 1;
-    width: 165px;
-    height: 1px;
 }
 
-table
-	tfoot, tbody
-		th
-			border-top 1px solid #DDD
-            
-#logo {
-    padding-top 25px;
-    padding-bottom 125px;
+.badge-text {
+    margin-top: 20px;
 }
 
-.services {
-    padding-top 75px;
-    padding-bottom 55px;
-    background #222;
-        
+.badge-icon-circle {
+    border-radius: 50%;
 }
 
-.services .single-service .service-icon,
-.services .single-service h3 {
-    color: #008ed6;
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 1.75em;
+    font-weight: 200;
+    font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    line-height: 1.25em;
 }
 
-.service-icon {
-    font-size: 80px;
+//
+// SECTION ELEMENTS
+//
+
+.section-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-#subscribe-label-wrapper {
-    display none
+.section-spacer-top {
+    height: 10px;
+    background: linear-gradient(white, #069);
 }
 
-input {
-    margin-bottom: 2px;
+.section-spacer {
+    background: url("/images/woman.jpg") no-repeat;
+    background-position: top center;
+    height: 400px;
 }
 
-.contact-email-wrapper
-.contact-phone-wrapper
-.contact-txt-wrapper
-.contact-button-wrapper
-    display none
+.section-spacer-bottom {
+    height: 10px;
+    background: linear-gradient(#069, white);
+}
 
+.section-header {
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
 
-.subscription-form .subscription-success,
-.subscription-form .subscription-error {
+.section-text {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#footer {
+    margin-top: 256;
+    margin-bottom: 256;
+}
+
+.tiny {
+    font-size: 0.75em;
+}
+
+//
+// PLANS
+//
+
+.plan {
+    background: #fafafa;
+    padding-bottom: 1.5em;
+    margin-bottom: 2em;
+    border-bottom: 3px solid #efefef;
+}
+
+.plan ul {
+    list-style: outside none none;
+    font-size: 20px;
+    padding-left: 0px;
+    margin-bottom: 1em;
+}
+
+.plan .amount {
+    font-weight: bold;
+}
+
+#plan-orange .plan-head {
+    background: #f28200;
+}
+
+#plan-blue .plan-head {
+    background: #004363;
+}
+
+#plan-green .plan-head {
+    background: #00ac4b;
+}
+
+.plan-banner-blank {
+    height: 2.5em;
     display: none;
 }
+
+.plan-head {
+    color: white;
+    font-size: 1.8em;
+    border-bottom: 3px solid #efefef;
+    margin-bottom: 0.5em;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 2px #444;
+}
+
+.plan-monthly-price {
+    font-size: 1.875em;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.plan-yearly-price {
+    padding: 0.5em 0px;
+    margin-bottom: 1.25em;
+    background: #ececec;
+}
+
+
+
+// <div id="plan-yellow">
+//     <div class="plan-banner-blank"></div>
+//     <div class="plan-head">Yellow</div>
+//     <div class="plan-monthly-price">$39.95 a month</div>
+//     <div class="plan-yearly-price">$479.40 a year</div>
+//     <ul>
+//         <li>2 year term</li>
+//         <li>$99 down payment on radio</li>
+//         <li>$20 a month after 2 years</li>
+//     </ul>
+// </div>

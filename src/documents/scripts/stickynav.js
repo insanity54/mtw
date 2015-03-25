@@ -1,45 +1,151 @@
-$(document).ready(function() {
-  $('.main-navigation').onePageNav({
-    scrollThreshold: 0.2, // Adjust if Navigation highlights too early or too late
-    filter: ':not(.external)',
-    changeHash: true
-  });
-});
-
-
-/* COLLAPSE NAVIGATION ON MOBILE AFTER CLICKING ON LINK - ADDED ON V1.5*/
-
-if (matchMedia('(max-width: 480px)').matches) {
-    $('.main-navigation a').on('click', function () {
-        $(".navbar-toggle").click();
-    });
-}
-
-
-/* NAVIGATION VISIBLE ON SCROLL */
-
-$(document).ready(function () {
-    mainNav();
-});
-
-$(window).scroll(function () {
-    mainNav();
-});
-
-if (matchMedia('(min-width: 992px), (max-width: 767px)').matches) {
-  function mainNav() {
-        var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if (top > 40) $('.sticky-navigation').stop().animate({"top": '0'});
-
-        else $('.sticky-navigation').stop().animate({"top": '-60'});
+// sticky nav on right
+$('#navigation').onePageNav({
+    currentClass: 'current',
+    changeHash: false,
+    scrollSpeed: 750,
+    scrollThreshold: 0.5,
+    filter: '',
+    easing: 'swing',
+    begin: function() {
+        //I get fired when the animation is starting
+        console.log('navigationg');
+    },
+    end: function() {
+        //I get fired when the animation is ending
+    },
+    scrollChange: function($currentListItem) {
+        //I get fired when you enter a section and I pass the list item of the section
     }
-}
+});
 
-if (matchMedia('(min-width: 768px) and (max-width: 991px)').matches) {
-  function mainNav() {
-        var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-        if (top > 40) $('.sticky-navigation').stop().animate({"top": '0'});
+// arrow navs on each section
+$('.nav-arrow').click(function(e) {
+    // get next section following this section
+    // go to next section
+    console.log('nav arrow clicked');
+    
+    var clickedSection = $(this).parents("section");
+    var followingSection = $(clickedSection).next();
 
-        else $('.sticky-navigation').stop().animate({"top": '-120'});
-    }
-}
+    $(window).scrollTo(followingSection, 500);
+});
+
+
+
+
+// //--------------------------------------------------------------//
+// //-----------------------Scrolling Navigation-------------------//
+// //--------------------------------------------------------------//
+// function scrollOne(){
+//   window.scrollTo(0, 0);
+//   $('#n1').removeClass("navOff").addClass("navOn");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scroll1(){
+//   $('#n1').removeClass("navOff").addClass("navOn");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scrollTwo(){
+//   window.scrollTo(0, 700);
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOff").addClass("navOn");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scroll2(){
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOff").addClass("navOn");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scrollThree(){
+//   window.scrollTo(0, 1750);
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOff").addClass("navOn");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scroll3(){
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOff").addClass("navOn");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scrollFour(){
+//   window.scrollTo(0, 4000);
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOff").addClass("navOn");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scroll4(){
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOff").addClass("navOn");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scrollFive(){
+//   window.scrollTo(0, 5300);
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOff").addClass("navOn");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scroll5(){
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOff").addClass("navOn");
+//   $('#n6').removeClass("navOn").addClass("navOff");
+// }
+
+// function scrollSix(){
+//   window.scrollTo(0, 6700);
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOff").addClass("navOn");
+// }
+
+// function scroll6(){
+//   $('#n1').removeClass("navOn").addClass("navOff");
+//   $('#n2').removeClass("navOn").addClass("navOff");
+//   $('#n3').removeClass("navOn").addClass("navOff");
+//   $('#n4').removeClass("navOn").addClass("navOff");
+//   $('#n5').removeClass("navOn").addClass("navOff");
+//   $('#n6').removeClass("navOff").addClass("navOn");
+// }
