@@ -42,10 +42,11 @@ docpadConfig = {
 
             # Styles
             styles: [
+                "//fonts.googleapis.com/css?family=Source+Sans+Pro"
+                "/vendor/fancybox/source/jquery.fancybox.css"
                 "/vendor/bootstrap/dist/css/bootstrap.css"
-                "//code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css"
+                "/vendor/ionicons/css/ionicons.min.css"
                 "/styles/style.css"
-                "//fonts.googleapis.com/css?family=News+Cycle"
             ]
 
             # Scripts
@@ -55,11 +56,11 @@ docpadConfig = {
                 "/vendor/jquery.localScroll/jquery.localScroll.min.js"
                 "/vendor/jquery.scrollTo/jquery.scrollTo.min.js"
                 "/vendor/bootstrap/dist/js/bootstrap.min.js"
-                "/vendor/fitvids/jquery.fitvids.js"
-                "/vendor/ajaxchimp/jquery.ajaxchimp.js"
                 "/vendor/jQuery-One-Page-Nav/jquery.nav.js"
                 "/scripts/contact.js"
                 "/scripts/stickynav.js"
+                "/vendor/fancybox/source/jquery.fancybox.js"
+                "/vendor/skrollr/dist/skrollr.min.js"
             ]
 
 

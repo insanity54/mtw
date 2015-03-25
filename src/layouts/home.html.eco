@@ -22,11 +22,11 @@
 	<meta name="viewport" content="width=device-width" />
 
 	<!-- Icons -->
-		<link rel="shortcut icon" href="images/icons/favicon.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
+	<link rel="shortcut icon" href="images/icons/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images/icons/apple-touch-icon-57-precomposed.png">
 
 	<!-- Shims: IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -37,90 +37,29 @@
 	<%- @getBlock('styles').add(@site.styles).toHTML() %>
 </head>
 <body>
-	<!-- Menu -->
-    <!-- STICKY NAVIGATION -->
-    <header>
-        <div class="navbar navbar-inverse bs-docs-nav navbar-fixed-top sticky-navigation">
-            <div class="container">
-                <div class="navbar-header">
-
-                    <!-- LOGO ON STICKY NAV BAR -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kane-navigation">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-
-                    <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
-
-                </div>
-
-                <!-- NAVIGATION LINKS -->
-                <div class="navbar-collapse collapse" id="kane-navigation">
-                    <ul class="nav navbar-nav navbar-right main-navigation">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#problem">Problem</a></li>
-                        <li><a href="#promise">Promise</a></li>
-                        <li><a href="#team">Team</a></li>
-                        <li><a href="#contact_us">Contact</a></li>
-                        <li><a href="http://blog.choosecase.com" target="_blank">Blog</a></li>
-                    </ul>
-                </div>
-            </div> <!-- /END CONTAINER -->
-        </div> <!-- /END STICKY NAVIGATION -->
-    </header>
-    
-    
-    
-    
-    <!--
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-                
-                
-				<a class="navbar-brand" href="/">Mobiletalk Wireless</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<% for document in @getCollection('pages').toJSON(): %>
-						<li
-							typeof="sioc:Page"
-							about="<%= document.url %>"
-							class="<%= 'active'	if @document.url is document.url %>"
-						>
-							<a href="<%= document.url %>" property="dc:title">
-								<%= document.title %>
-							</a>
-						</li>
-					<% end %>
-				</ul>
-			</div>
-		</div>
-	</div>-->
-
+    </div>
 	<!-- Content -->
 		<!-- Content -->
-		<section id="content" class="content">
-			<%- @content %>
-		</section>
+		<%- @content %>
+
 
 		<!-- Footer -->
 		<footer>
-			<p class="pull-left">Mobiletalk Wireless Company <%- (new Date()).getFullYear() %></p>
-			<p class="pull-right">
-				This website was last updated on <%= @site.date.toLocaleDateString('en-US') %>
-			</p>
+			<div class="social-media"></div> <!-- @todo? -->
+			<div class="footer-text">
+
+				<h3>Mobiletalk Wireless Company <%- (new Date()).getFullYear() %></h3>
+				<p>
+					last updated on <%= @site.date.toLocaleDateString('en-US') %>
+				</p>
+				
+				<p class="tiny">* MobileTalk uses Zello for it’s Push-to-Talk application, all images, brands, product names, logos or trademarks relating to Zello Walkie Talkie App are the property of Zello Inc. ©2014 Zello Inc.</p>
+				
+			</div>
 		</footer>
 	<!-- /container -->
 
 	<!-- Scripts -->
-    <%- @getBlock('scripts').add(@site.scripts or []).add("/scripts/sitemap.js" or []).add("/scripts/fit-video.js").add("/vendor/parsleyjs/dist/parsley.min.js").add("/vendor/fitvids/jquery.fitvids.js").toHTML() %>
+    <%- @getBlock('scripts').add(@site.scripts or []).add("/scripts/sitemap.js" or []).add("/scripts/fit-video.js").add("/vendor/fitvids/jquery.fitvids.js").add("/scripts/navTest.js").add("/scripts/googleMap.js").toHTML() %>
 </body>
 </html>
