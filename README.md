@@ -12,12 +12,15 @@ Notes
 ** Made in GIMP
 ** 1824x760px
 ** Picture colorized with H: 200, S: 100, L: 0  (pretty much #006699)
-** #006699 overlay at 50% opacity
-** 70% quality
+** solid #006699 overlay layer at 50% opacity
+** export jpg at 50% quality
 
 Todos
 ---
 
+* move google map css to stylesheet instead of inline
+* fix google maps for mobile so users can actually scroll past the map
+* make the badges go to col-sm-6
 * DONE remove instances of Zello (we'll be using esChat)
 * add section telling about compliance with distracted driving laws
 * modify future coverage map to show up to sandpoint & a little beyond
@@ -30,9 +33,9 @@ Todos
 * asterisk badge - change to "Complies with new DOT hands-free driving laws" with appropriate icon
 * first section text, "with the app" to a description 
 * change tesla badge to "Inland northwest coverage"
-* add map legend in top left corner "blue: current coverage, red: planned summer 2015 coverage"
-* cost effective section - remove PTT over cellular and make 3 columns
-* make the woman picture unique for every section.
+* DONE add map legend in top left corner "blue: current coverage, red: planned summer 2015 coverage"
+* DONE cost effective section - remove PTT over cellular and make 3 columns
+* DONE make the woman picture unique for every section.
 * DONE remove video preview image
 * DONE inbetween "cost effective" and "all about you" put pricing plans
 * DONE 3 plans
