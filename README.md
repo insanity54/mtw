@@ -18,21 +18,23 @@ Notes
 Todos
 ---
 
+* get some icons that match badges better
+* front section mobile optimizations
 * move google map css to stylesheet instead of inline
 * fix google maps for mobile so users can actually scroll past the map
 * make the badges go to col-sm-6
 * DONE remove instances of Zello (we'll be using esChat)
 * add section telling about compliance with distracted driving laws
 * modify future coverage map to show up to sandpoint & a little beyond
-* "contact info" section. with deets visible ALWAYS phone, email, address
-* place a kenwood mobile and portable radio instead of zello static image on front
-* remove last three cellphone badges on "one button press section"
-* link badge - change to "instant push-to-talk access" with two radios as icon
-* cell bars badge - change to "unlimited voice" with appropriate icon
-* wifi bars badge - change to "wide area coverage"
-* asterisk badge - change to "Complies with new DOT hands-free driving laws" with appropriate icon
-* first section text, "with the app" to a description 
-* change tesla badge to "Inland northwest coverage"
+* DONE "contact info" section. with deets visible ALWAYS phone, email, address
+* DONE place a kenwood mobile and portable radio instead of zello static image on front
+* DONE remove last three cellphone badges on "one button press section"
+* DONE link badge - change to "instant push-to-talk access" with two radios as icon
+* DONE cell bars badge - change to "unlimited voice" with appropriate icon
+* DONE wifi bars badge - change to "wide area coverage"
+* DONE asterisk badge - change to "Complies with new DOT hands-free driving laws" with appropriate icon
+* DONE first section text, "with the app" to a description 
+* DONE change tesla badge to "Inland northwest coverage"
 * DONE add map legend in top left corner "blue: current coverage, red: planned summer 2015 coverage"
 * DONE cost effective section - remove PTT over cellular and make 3 columns
 * DONE make the woman picture unique for every section.

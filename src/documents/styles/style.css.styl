@@ -57,15 +57,79 @@ body {
     z-index: 4000;
 }
 
-#contact-button {
-    height: 120px;
-    width: 15px;
+
+//
+// CONTACT BUTTON
+//
+
+#contact {
+    text-align: left;
     position: fixed;
     left: 0;
     top: 40%;
-    cursor: pointer;
     z-index: 4000;
 }
+
+#contact-drawer {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: -5px;
+}
+
+#contact-drawer.collapsed {
+    overflow: hidden;
+    height: 1px;
+}
+
+#contact-drawer.slid {
+    left: -190px;
+}
+
+#contact-slider {
+    position: relative;
+    z-index: 5;
+    background-color: #fff;
+    height: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#contact-slider.collapsed {
+    left: -190px;
+    background-color: #e92424;
+}
+
+#contact-close {
+    margin-right: 5px;
+}
+
+#contact-close.transition {
+    opacity: 0;
+}
+
+#contact-close.closed {
+    color: #fff;
+    opacity: 1;
+}
+
+#contact-close.closed:hover {
+    color: lime;
+}
+
+.contact-slider button {
+    margin-right: 5px;
+}
+
+.contact-drawer-section {
+    margin-bottom: 10px;
+}
+
 
 
 //
@@ -155,7 +219,7 @@ h2 {
     letter-spacing: 0.05em;
     font-size: 1.75em;
     font-weight: 200;
-    font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     line-height: 1.25em;
 }
 
@@ -176,6 +240,7 @@ h2 {
 .section-spacer {
     background-position: top center;
     height: 400px;
+    background-color: #069;
 }
 
 .section-spacer-1 {

@@ -52,6 +52,8 @@ docpadConfig = {
             # Scripts
             scripts: [
                 "/vendor/jquery/dist/jquery.min.js"
+                "/vendor/jquery.ui/ui/core.js"
+                "/vendor/jquery.ui/ui/effect.js"
                 "/vendor/modernizr/modernizr.js"
                 "/vendor/jquery.localScroll/jquery.localScroll.min.js"
                 "/vendor/jquery.scrollTo/jquery.scrollTo.min.js"
@@ -60,7 +62,6 @@ docpadConfig = {
                 "/scripts/contact.js"
                 "/scripts/stickynav.js"
                 "/vendor/fancybox/source/jquery.fancybox.js"
-                "/vendor/skrollr/dist/skrollr.min.js"
             ]
 
 

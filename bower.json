@@ -24,7 +24,8 @@
     "fitvids": "~1.1.0",
     "jQuery-One-Page-Nav": "~3.0.0",
     "fancybox": "~2.1.5",
-    "skrollr": "~0.6.29"
+    "skrollr": "~0.6.29",
+    "jquery.ui": "~1.11.4"
   },
   "resolutions": {
     "jquery": "~2.1.3"
