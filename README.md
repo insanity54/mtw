@@ -9,11 +9,14 @@ Notes
 * Use `docpad run`, not `npm start`.
 * color scheme: http://colorschemedesigner.com/csd-3.5/#3s61T--umw0w0
 * Blue background images
-** Made in GIMP
-** 1824x760px
-** Picture colorized with H: 200, S: 100, L: 0  (pretty much #006699)
-** solid #006699 overlay layer at 50% opacity
-** export jpg at 50% quality
+ * Made in GIMP
+ * 1824x760px
+ * Picture colorized with H: 200, S: 100, L: 0  (pretty much #006699)
+ * solid #006699 overlay layer at 50% opacity
+ * export jpg at 50% quality
+* Create coverage maps using http://blog.sallarp.com/geojson-google-maps-editor.html
+ * the editor uses "MultiPolygon", google maps use "Polygon"
+ * you can copy the GM polygon coordinaes to the multipolygon coordinates. you may have to mess with the object level though.
 
 Todos
 ---
@@ -25,7 +28,7 @@ Todos
 * make the badges go to col-sm-6
 * DONE remove instances of Zello (we'll be using esChat)
 * add section telling about compliance with distracted driving laws
-* modify future coverage map to show up to sandpoint & a little beyond
+* DONE modify future coverage map to show up to sandpoint & a little beyond
 * DONE "contact info" section. with deets visible ALWAYS phone, email, address
 * DONE place a kenwood mobile and portable radio instead of zello static image on front
 * DONE remove last three cellphone badges on "one button press section"
