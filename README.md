@@ -3,6 +3,15 @@ mobiletalk website
 
 [![Build Status](https://travis-ci.org/insanity54/mtw.svg?branch=master)](https://travis-ci.org/insanity54/mtw)
 
+Setup
+---
+
+* run `npm install` to get all dependency packages
+* run `docpad run` to test and develop the site
+* run `docpad build` to render all files into production site
+* serve files in `/out` using nginx or similar
+
+
 Notes
 ---
 

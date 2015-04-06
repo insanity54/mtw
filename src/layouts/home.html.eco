@@ -53,13 +53,13 @@
 					last updated on <%= @site.date.toLocaleDateString('en-US') %>
 				</p>
 				
-				<p class="tiny">* MobileTalk uses Zello for it’s Push-to-Talk application, all images, brands, product names, logos or trademarks relating to Zello Walkie Talkie App are the property of Zello Inc. ©2014 Zello Inc.</p>
+				<p class="tiny">* partner coverage coming soon.</p>
 				
 			</div>
 		</footer>
 	<!-- /container -->
 
 	<!-- Scripts -->
-    <%- @getBlock('scripts').add(@site.scripts or []).add("/scripts/sitemap.js" or []).add("/scripts/fit-video.js").add("/vendor/fitvids/jquery.fitvids.js").add("/scripts/navTest.js").add("/scripts/googleMap.js").toHTML() %>
+    <%- @getBlock('scripts').add(@site.scripts or []).add("/scripts/sitemap.js" or []).add("/scripts/fit-video.js").add("/vendor/fitvids/jquery.fitvids.js").add("/scripts/googleMap.js").toHTML() %>
 </body>
 </html>
