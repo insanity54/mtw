@@ -66,7 +66,7 @@ function initialize() {
 
     //console.log('google map init ahs run');
     var mapOptions = {
-        zoom: 9,
+        zoom: 8,
         center: new google.maps.LatLng(47.70861, -117.47926),
         scrollwheel: false,
         panControl: false,

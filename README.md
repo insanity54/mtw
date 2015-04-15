@@ -8,7 +8,7 @@ Setup
 
 * run `npm install` to get all dependency packages
 * run `docpad run` to test and develop the site
-* run `docpad build` to render all files into production site
+* run `docpad generate --env static` to render all files into production site
 * serve files in `/out` using nginx or similar
 
 
@@ -30,13 +30,13 @@ Notes
 Todos
 ---
 
-* get some icons that match badges better
+* DONE get some icons that match badges better
 * front section mobile optimizations
 * move google map css to stylesheet instead of inline
 * fix google maps for mobile so users can actually scroll past the map
-* make the badges go to col-sm-6
+* DONE make the badges go to col-sm-6
 * DONE remove instances of Zello (we'll be using esChat)
-* add section telling about compliance with distracted driving laws
+* DONE add section telling about compliance with distracted driving laws
 * DONE modify future coverage map to show up to sandpoint & a little beyond
 * DONE "contact info" section. with deets visible ALWAYS phone, email, address
 * DONE place a kenwood mobile and portable radio instead of zello static image on front
