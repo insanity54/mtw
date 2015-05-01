@@ -25,8 +25,8 @@ if [ -z "$acct" ]; then
     read DEPLOY_ACCOUNT
 fi
  
-echo "Deploying ${DIR}/${DEPLOY_SOURCE_DIR} to ${DEPLOY_ACCOUNT}@${DEPLOY_SERVER}:${DEPLOY_DEST_DIR}"
+echo "Deploying ${DEPLOY_SOURCE_DIR} to ${DEPLOY_ACCOUNT}@${DEPLOY_SERVER}:${DEPLOY_DEST_DIR}"
  
 #docpad generate --env static
-chmod -R og+Xr out
-rsync $NFLAG -rvzp --size-only --delete --exclude-from="$DIR/.deployignore" "${DIR}/${DEPLOY_SOURCE_DIR}" "${DEPLOY_ACCOUNT}@${DEPLOY_SERVER}:${DEPLOY_DEST_DIR}"
+chmod -R og+Xr "${DEPLOY_SOURCE_DIR}"
+rsync $NFLAG -rvzp --size-only --delete --exclude-from="$DIR/.deployignore" "${DEPLOY_SOURCE_DIR}" "${DEPLOY_ACCOUNT}@${DEPLOY_SERVER}:${DEPLOY_DEST_DIR}"
