@@ -26,6 +26,8 @@ Notes
 * Create coverage maps using http://blog.sallarp.com/geojson-google-maps-editor.html
  * the editor uses "MultiPolygon", google maps use "Polygon"
  * you can copy the GM polygon coordinaes to the multipolygon coordinates. you may have to mess with the object level though.
+* kenwood images http://kenwoodusa.dealerarena.com/shop/index.php?dispatch=pages.view&page_id=5
+
 
 Todos
 ---
