@@ -47,7 +47,7 @@ Todos
 * DONE cell bars badge - change to "unlimited voice" with appropriate icon
 * DONE wifi bars badge - change to "wide area coverage"
 * DONE asterisk badge - change to "Complies with new DOT hands-free driving laws" with appropriate icon
-* DONE first section text, "with the app" to a description 
+* DONE first section text, "with the app" to a description
 * DONE change tesla badge to "Inland northwest coverage"
 * DONE add map legend in top left corner "blue: current coverage, red: planned summer 2015 coverage"
 * DONE cost effective section - remove PTT over cellular and make 3 columns
@@ -62,3 +62,12 @@ Todos before launch
 
 * find all instances of '@todo' and correct whatever is noted
 * change mailchimp owner to scott or kathy or steve so when mail is sent out, it references "scott@twoway.net" not "chris@grimtech.net"
+
+
+
+## Changelog
+
+* Jan 26 2017
+  * updated coverage map
+    * https://gist.github.com/anonymous/6a500860cd3e8fab629b18d4a39e5518
+  * added pipedrive form
