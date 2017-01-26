@@ -1,8 +1,8 @@
 {
-  "name": "twitter-bootstrap.docpad",
-  "version": "0.10.0",
-  "description": "Bootstrap skeleton for DocPad. Simple and flexible HTML, CSS, and Javascript for popular user interface components and interactions.",
-  "homepage": "https://github.com/bevry/twitter-bootstrap.docpad",
+  "name": "mtw site",
+  "version": "0.10.1",
+  "description": "mtw site. Based on https://github.com/bevry/twitter-bootstrap.docpad",
+  "homepage": "https://github.com/insanity54/mtw",
   "keywords": [
     "docpad-skeleton",
     "docpad",
@@ -10,38 +10,39 @@
     "bootstrap",
     "twitter bootstrap"
   ],
-  "author": "Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
+  "author": "Chris Grimmett <chris@grimtech.net>",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Chris Grimmett <chris@grimtech.net>"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Chris Grimmett <chris@grimtech.net> (https://github.com/insanity54)"
   ],
   "bugs": {
-    "url": "https://github.com/docpad/twitter-bootstrap.docpad/issues"
+    "url": "https://github.com/insanity54/mtw/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/docpad/twitter-bootstrap.docpad.git"
+    "url": "https://github.com/insanity54/mtw.git"
   },
   "engines": {
     "node": "0.10",
     "npm": "1.2"
   },
   "dependencies": {
-    "docpad": "~6.78",
-    "docpad-plugin-downloader": "~2.1.4",
-    "docpad-plugin-cleanurls": "~2.6.2",
-    "docpad-plugin-coffeescript": "~2.2.3",
-    "docpad-plugin-eco": "~2.0.3",
-    "docpad-plugin-less": "~2.4.1",
-    "docpad-plugin-marked": "~2.2.0",
-    "docpad-plugin-partials": "~2.8.1",
-    "docpad-plugin-related": "~2.2.2",
-    "docpad-plugin-stylus": "~2.5.0",
-    "docpad-plugin-text": "~2.3.2",
-    "docpad-plugin-livereload": "~2.6.0",
-    "mailchimp": "~1.1.0"
+    "docpad": "^6.78",
+    "docpad-plugin-cleanurls": "^2.6.2",
+    "docpad-plugin-coffeescript": "^2.2.3",
+    "docpad-plugin-downloader": "^2.1.4",
+    "docpad-plugin-eco": "^2.0.3",
+    "docpad-plugin-less": "^2.4.1",
+    "docpad-plugin-livereload": "^2.6.0",
+    "docpad-plugin-marked": "^2.2.0",
+    "docpad-plugin-partials": "^2.8.1",
+    "docpad-plugin-related": "^2.2.2",
+    "docpad-plugin-stylus": "^2.5.0",
+    "docpad-plugin-text": "^2.3.2",
+    "eco": "1.0.3",
+    "mailchimp": "^1.1.0"
   },
   "devDependencies": {
     "docpad-plugin-livereload": "~2.5.6"
