@@ -5,7 +5,6 @@
 /* TEAM */
   Dev: Chris Grimmett
   Site: www.grimtech.net
-  Twitter: @insanity54
   Location: Internet
 
 /* THANKS */
