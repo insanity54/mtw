@@ -49,7 +49,8 @@
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
-    "start": "./node_modules/docpad/bin/docpad run"
+    "start": "./node_modules/docpad/bin/docpad run",
+    "build": "./node_modules/docpad/bin/docpad generate --env static"
   },
   "private": true
 }

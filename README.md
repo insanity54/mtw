@@ -80,3 +80,4 @@ Todos before launch
   * removed space in npm package name
   * made npm package private
   * changed npm start script to point to `docpad run` instead of `docpad-server`
+  * add npm build script
