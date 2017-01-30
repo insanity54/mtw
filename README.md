@@ -15,7 +15,7 @@ Setup
 Notes
 ---
 
-* Use `docpad run`, not `npm start`.
+* Use `docpad run`, or `npm run start`.
 * color scheme: http://colorschemedesigner.com/csd-3.5/#3s61T--umw0w0
 * Blue background images
  * Made in GIMP
@@ -26,6 +26,8 @@ Notes
 * Create coverage maps using http://blog.sallarp.com/geojson-google-maps-editor.html
  * the editor uses "MultiPolygon", google maps use "Polygon"
  * you can copy the GM polygon coordinaes to the multipolygon coordinates. you may have to mess with the object level though.
+ * make sure to keep a backup (a link in the changelog to a public gist is fine) of each map change
+ * If your map updates doesn't display when testing, check the browser console for clues.
 * kenwood images http://kenwoodusa.dealerarena.com/shop/index.php?dispatch=pages.view&page_id=5
 
 
@@ -71,3 +73,10 @@ Todos before launch
   * updated coverage map
     * https://gist.github.com/anonymous/6a500860cd3e8fab629b18d4a39e5518
   * added pipedrive form
+* Jan 30 2017
+  * updated coverage map
+    * added Elensburg to prime coverage area
+    * https://gist.github.com/anonymous/0434f7d8d55078ee62dc82ddd6900056
+  * removed space in npm package name
+  * made npm package private
+  * changed npm start script to point to `docpad run` instead of `docpad-server`

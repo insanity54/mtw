@@ -1,6 +1,6 @@
 {
-  "name": "mtw site",
-  "version": "0.10.1",
+  "name": "mtw-site",
+  "version": "0.10.2",
   "description": "mtw site. Based on https://github.com/bevry/twitter-bootstrap.docpad",
   "homepage": "https://github.com/insanity54/mtw",
   "keywords": [
@@ -49,6 +49,7 @@
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
-    "start": "node_modules/docpad/bin/docpad-server"
-  }
+    "start": "./node_modules/docpad/bin/docpad run"
+  },
+  "private": true
 }
