@@ -1,7 +1,7 @@
 mobiletalk website
 ==============
 
-[![Build Status](https://travis-ci.org/insanity54/mtw.svg?branch=master)](https://travis-ci.org/insanity54/mtw)
+[![Build Status](https://travis-ci.org/insanity54/mtw.svg?branch=master)](https://travis-ci.org/insanity54/mtw) [![Greenkeeper badge](https://badges.greenkeeper.io/insanity54/mtw.svg)](https://greenkeeper.io/)
 
 Setup
 ---
