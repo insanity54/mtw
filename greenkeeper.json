@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "src/files/vendor/bootstrap/package.json",
+        "src/files/vendor/jquery.scrollTo/package.json",
+        "src/files/vendor/jquery.ui/package.json",
+        "src/files/vendor/skrollr/package.json"
+      ]
+    }
+  }
+}
